@@ -44,7 +44,7 @@ app.get('/home',(request,response)=>{
     welcomeMessage:'Welcome to home page'
 
   })
-})
+});
 
 
 app.get('/about', (request,response)=>{
