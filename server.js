@@ -54,6 +54,14 @@ app.get('/about', (request,response)=>{
   })
 });
 
+app.get('/projects',(request,response)=>{
+  response.render('projects.hbs',{
+    pageTitle:'projects Page',
+    welcomeMessage:'Welcome to Projects page'
+  })
+});
+
+
 app.listen(port,()=>{
   console.log(`Server is running up on port number ${port}`);
 });
